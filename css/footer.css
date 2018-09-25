@@ -1,0 +1,22 @@
+footer{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.h2_footer{
+  text-align: center;
+  font-size: 14px;
+}
+
+footer h3 {
+  text-align: center;
+  font-size: 14px;
+}
+
+footer hr{
+  margin: 10px;
+}
+
+footer h5{
+  text-align: center;
+}
