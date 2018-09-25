@@ -1,6 +1,7 @@
 footer{
   margin-top: 20px;
   text-align: center;
+  height: 250px;
 }
 
 .h2_footer{
@@ -17,6 +18,14 @@ footer hr{
   margin: 10px;
 }
 
+footer h4{
+  font-size: 20px;
+}
+
 footer h5{
   text-align: center;
+}
+
+footer h6{
+  text-align: left;
 }

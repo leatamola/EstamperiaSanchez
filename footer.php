@@ -25,21 +25,24 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-4 mb-3 mb-md-0">
-        <h4 class="text-uppercase m-0">Dirección</h4>
+        <h4>NEWSLETTER</h4>
           <hr>
-        <div class="small text-black-50">1 de Mayo 1376 Depto 3</div>
+        <div class="small text-black-50">......</div>
       </div>
 
       <div class="col-md-4 mb-3 mb-md-0">
-        <h4 class="text-uppercase m-0">Dirección</h4>
+        <h4>CONTACTO</h4>
           <hr>
-        <div class="small text-black-50">1 de Mayo 1376 Depto 3</div>
+        <div class="small text-black-50">sanchez.estampados@gmail.com </div>
       </div>
 
       <div class="col-md-4 mb-3 mb-md-0">
-        <h4 class="text-uppercase m-0">Dirección</h4>
+        <h4>Dirección</h4>
           <hr>
         <div class="small text-black-50">1 de Mayo 1376 Depto 3</div>
+      </div>
+      <div class="col-12" align="left">
+        <img class="mediosDePago" src="imagenes/mediosDePago.png" alt="Medios de Pago">
       </div>
     </div>
   </div>
