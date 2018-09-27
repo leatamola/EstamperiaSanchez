@@ -1,6 +1,6 @@
 <footer>
   <div class="container-fluid">
-    <div class="row">
+    <div class="seguinos" >
       <div class="col-12">
         <h5>SEGUINOS EN</h5>
       </div>
@@ -22,28 +22,70 @@
 
 <hr>
 
-  <div class="container-fluid">
+  <div class="container" id="footer1">
     <div class="row">
       <div class="col-md-4 mb-3 mb-md-0">
-        <h4>NEWSLETTER</h4>
+        <i class="fas fa-truck"></i>
+        <h4>ENVIOS GRATIS</h4>
           <hr>
-        <div class="small text-black-50">......</div>
+        <div class="small text-black-50">PARA COMPRAS DE MÁS DE $100</div>
+        <hr width="200px">
       </div>
 
       <div class="col-md-4 mb-3 mb-md-0">
-        <h4>CONTACTO</h4>
+        <i class="fas fa-credit-card"></i>
+        <h4>HASTA 12 CUOTAS SIN INTERÉS</h4>
           <hr>
-        <div class="small text-black-50">sanchez.estampados@gmail.com </div>
+        <div class="small text-black-50">CON TODAS LAS TARJETAS DE CRÉDITO</div>
+        <hr width="200px">
       </div>
 
       <div class="col-md-4 mb-3 mb-md-0">
-        <h4>Dirección</h4>
+        <i class="fas fa-lock"></i>
+        <h4>SITIO SEGURO</h4>
           <hr>
-        <div class="small text-black-50">1 de Mayo 1376 Depto 3</div>
+        <div class="small text-black-50">PROTEGEMOS TUS DATOS</div>
+        <hr width="200px">
       </div>
-      <div class="col-12" align="left">
-        <img class="mediosDePago" src="imagenes/mediosDePago.png" alt="Medios de Pago">
-      </div>
+
     </div>
   </div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md4 mb-3 mb-md-0" >
+
+        <div class="col-12" align="left">
+          <h7>MEDIOS DE PAGO</h7>
+        </div>
+        <div class="col-12">
+
+          <img class="tarjetas" src="imagenes/tarjetas/amex.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/argencard.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/banelco.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/cabal.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/cencosud.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/diners.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/mastercard.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/mercado-envios.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/mercadopago.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/naranja.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/nativa.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/pagofacil.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/rapipago.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/shopping.png" alt="amex">
+          <img class="tarjetas" src="imagenes/tarjetas/visa.png" alt="amex">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
 </footer>
