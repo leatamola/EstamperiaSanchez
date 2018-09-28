@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
         <ul class="navbar-nav mr-auto ml-auto">
           <li class="navbar-brand">
-              <a class="nav-link" href="#">HOME<span class="sr-only"></span></a>
+              <a class="nav-link" href="index.php">HOME<span class="sr-only"></span></a>
             </li>
             <li class="navbar-brand">
               <a class="nav-link" href="faqs.php">FAQS</a>

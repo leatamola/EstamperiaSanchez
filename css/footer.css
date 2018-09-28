@@ -1,7 +1,7 @@
 footer{
-  margin-top: 20px;
   text-align: center;
-  height: 250px;
+  background-color: #f8f9fa !important;
+
 }
 
 .h2_footer{
@@ -14,9 +14,6 @@ footer h3 {
   font-size: 14px;
 }
 
-footer hr{
-  margin: 10px;
-}
 
 footer h4{
   font-family: "Source Sans Pro", sans-serif;
@@ -41,7 +38,7 @@ footer i{
 }
 
 #footer1{
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 #footer2{
   background-color: #c0c2c3;
@@ -54,6 +51,11 @@ footer i{
   margin: 10px 5px;
 }
 
+#grupoTarjetas{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .seguinos{
-  margin: 30px;
+  padding-top: 2px;
 }

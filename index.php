@@ -50,7 +50,7 @@
 
 	<br><br><br><br><br><br><br>
 
-	<hr>
+
 
 	<?php include ('footer.php'); ?>
 
