@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/bootstrap-css/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/faqs.css">
 	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
