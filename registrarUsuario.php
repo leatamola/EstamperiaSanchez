@@ -38,23 +38,24 @@
     <div class="form-content container centrar-contenido">
       <div class="row justify-content">
         <div class="col-12 col-md-8 col-lg-6">
-          <form class="row" action="registroUsuarioOK.php" method="post">
+          <form class="row" action=<?php echo $targetForm; ?> method="post">
 
             <label class="etiqueta col-12 col-md-2 col-lg-2" for="nombreDelUsuario">Nombre:</label>
 
-              <input class="col-12 col-md-10 col-lg-10" type="text" id="nombreDelUsuario" placeholder="Ingrese su nombre" required name="userName">
+              <input class="col-12 col-md-10 col-lg-10" type="text" id="nombreDelUsuario" placeholder="Ingrese su nombre" name="userName"
+               value = <?php echo $_POST['userName']??'';?>>
               <?php echo $errorNombre; ?>
 
             <br><br>
 
             <label class="etiqueta col-12 col-md-2 col-lg-2">Teléfono:</label>
-            <input class="col-12 col-md-10 col-lg-10" type="tel" placeholder="011-111-1111" name="userPhone";?>
+            <input class="col-12 col-md-10 col-lg-10" type="tel" placeholder="011-111-1111" name="userPhone" value=<?php echo $_POST['userPhone']??'';?>>
 
             <br><br>
 
             <label class="etiqueta col-12 col-md-2 col-lg-2">Email:</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="text" required name="userMail">
+            <input class="col-12 col-md-10 col-lg-10" type="text" name="userMail" value=<?php echo $_POST['userMail']??'';?>>
             <?php echo $errorEmail; ?>
 
             <br><br>
@@ -62,13 +63,23 @@
 
             <label class="etiqueta col-12 col-md-2 col-lg-2" for="">Contraseña</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="8">
+            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="8" value=<?php echo $_POST['userPass']??'';?> >
 
             <br><br>
 
             <label class="etiqueta col-12 col-md-2">Género</label>
-              <label class="col-6 col-md-3"><input type="radio" name="userGender" value="m">Masculino</label>
-              <label  class="col-6 col-md-3"><input type="radio" name="userGender" value="f">Femenino</label>
+              <label class="col-6 col-md-3"><input type="radio" name="userGender" value="m"
+                <?php
+                if(!isset($_POST['userGender'])){
+                  echo '';
+                }else if ($_POST['userGender']==='m') {
+                    echo 'checked';}?> > Masculino</label>
+              <label  class="col-6 col-md-3"><input type="radio" name="userGender" value="f"
+                <?php
+                if(!isset($_POST['userGender'])){
+                  echo '';
+                }else if ($_POST['userGender']==='f') {
+                    echo 'checked';}?> > Femenino</label>
               <?php echo $errorGenero; ?>
 
             <br><br>
