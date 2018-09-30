@@ -24,7 +24,7 @@
             <a class="nav-link" href="#">LOGIN</a>
           </li>
           <li class="navbar-brand">
-              <a class="nav-link" href="#">REGISTER</a>
+              <a class="nav-link" href="registrarUsuario.php">REGISTER</a>
           </li>
           <li class="navbar-brand carrito">
              <a class="nav-link" href="#"><img src="imagenes/carrito2.png" style="width: 30px"></a>
