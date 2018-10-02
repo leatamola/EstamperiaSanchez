@@ -32,9 +32,9 @@
           <h2>
             <?php
               if($_GET['g']=='f'){
-                echo "¡Bienvenida,!";
+                echo "Bienvenida, ";
               }else{
-                echo "¡Bienvenido,!";
+                echo "Bienvenido, ";
               }
               echo $_GET['us'];
             ?>

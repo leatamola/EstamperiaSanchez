@@ -5815,6 +5815,7 @@ button.close {
 .carousel-inner {
   position: relative;
   width: 100%;
+  background-image: url(../../../imagenes/carousel/backgroundCarousel.png);
   overflow: hidden;
 }
 

@@ -27,13 +27,13 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="imagenes/BlancoFront.png" alt="foto 1">
+				<img class="d-block w-100" src="imagenes/carousel/remera2.png" alt="foto 1">
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="imagenes/BlancoFront.png" alt="foto 2">
+				<img class="d-block w-100" src="imagenes/carousel/remera3.png" alt="foto 2">
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="imagenes/BlancoFront.png" alt="foto 3">
+				<img class="d-block w-100" src="imagenes/carousel/remera1.png" alt="foto 3">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -48,7 +48,6 @@
 
 
 
-	<br><br><br><br><br><br><br>
 
 
 

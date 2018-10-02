@@ -64,9 +64,9 @@
             <br><br>
 
 
-            <label class="etiqueta col-12 col-md-2 col-lg-2" for="">Contraseña</label>
+            <label class="etiqueta col-12 col-md-2 col-lg-2" for="">Contraseña:</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="8" value=<?php echo $_POST['userPass']??'';?> >
+            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="20" value=<?php echo $_POST['userPass']??'';?> >
 
             <br><br>
 
