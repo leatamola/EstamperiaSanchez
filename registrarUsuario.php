@@ -38,13 +38,16 @@
     <div class="form-content container centrar-contenido">
       <div class="row justify-content">
         <div class="col-12 col-md-8 col-lg-6">
-          <form class="row" action=<?php echo $targetForm; ?> method="post">
+
+
+
+          <form class="row" action= <?php echo $targetForm; ?> method="post">
 
             <label class="etiqueta col-12 col-md-2 col-lg-2" for="nombreDelUsuario">Nombre:</label>
 
               <input class="col-12 col-md-10 col-lg-10" type="text" id="nombreDelUsuario" placeholder="Ingrese su nombre" name="userName"
                value = <?php echo $_POST['userName']??'';?>>
-              <?php echo $errorNombre; ?>
+
 
             <br><br>
 

@@ -27,10 +27,12 @@
     }
 
     if($errorNombre==="" && $errorEmail==="" && $errorGenero===""){
-      $targetForm = "registrarUsuarioOK.php";
-    }else{
-      $targetForm = "registrarUsuario.php";
+      header('location:registrarUsuarioOK.php?us='.$_POST['userName'].'&&g='.$_POST['userGender'].'');
     }
+
+  //  $targetForm = "registrarUsuario.php";
+  //agrego más variables por get: &
+
     var_dump($_POST);
     var_dump($errorEmail);
     var_dump($errorGenero);

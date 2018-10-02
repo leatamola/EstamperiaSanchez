@@ -29,9 +29,19 @@
     <div class="container">
       <div class="row centrar-contenido">
         <div class="form-title col-12 col-lg 6">
-          <h2> ¡Bienvenido! </h1>
+          <h2>
+            <?php
+              if($_GET['g']=='f'){
+                echo "¡Bienvenida,!";
+              }else{
+                echo "¡Bienvenido,!";
+              }
+              echo $_GET['us'];
+            ?>
+          </h2>
           <h3> Se registró exitosamente. </h2>
-          Antes de efectuar su primera compra, debe verificar su mail.
+          Antes de efectuar su primera compra, deberá verificar su mail.
+          <!--<?php var_dump($_GET); ?>-->
         </div>
       </div>
 
