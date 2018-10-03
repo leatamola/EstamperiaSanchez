@@ -70,6 +70,12 @@
 
             <br><br>
 
+            <label class="etiqueta col-12" for="">Repetir contraseña:</label>
+
+            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="20" value=<?php echo $_POST['userPass']??'';?> >
+
+            <br><br>
+
             <label class="etiqueta col-12 col-md-2">Género</label>
               <label class="col-6 col-md-3"><input type="radio" name="userGender" value="m"
                 <?php

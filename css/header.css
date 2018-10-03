@@ -123,7 +123,7 @@ ul.nav-items {
 }
 
 #navegacion:target ul.nav-items {
-    background: #f0f0f0 none repeat scroll 0 0;
+    background: #eceff1 none repeat scroll 0 0;
     height: 15.8em;
     transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s; 
 }
