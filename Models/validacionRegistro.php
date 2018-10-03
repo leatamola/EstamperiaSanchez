@@ -1,7 +1,9 @@
   <?php
 
   $errorNombre= '';
+  $errorPhone= '';
   $errorEmail= '';
+  $errorPassword= '';
   $errorGenero= '';
   $targetForm = "registrarUsuario.php";
 
@@ -15,6 +17,18 @@
     }else if( strlen( $_POST['userName'] )< 2){
       $errorNombre = 'El nombre tiene que tener al menos dos letras';
     }
+    if(!empty($_POST['userPhone']) && !is_Numeric($_POST['userPhone']) ){
+      $errorPhone = 'Debe ingresar un número de teléfono';
+    }else if( strlen($_POST['userPhone']) < 8){
+      $errorPhone = 'Ingrese un número de teléfono válido';
+    }
+    if( empty( $_POST['userPass']) ){
+      $errorPassword = 'Debe ingresar una contraseña';
+    }else if( strlen( $_POST['userPass'] )< 8){
+      $errorPassword = 'La contraseña debe tener al menos 8 caracteres';
+    }else if ($_POST['userPass'] != $_POST['userPassCheck']) {
+      $errorPassword = 'No coinciden las contraseñas ingresadas';
+    }
 
     if( empty( $_POST['userMail']) ){
       $errorEmail = 'Debe ingresar el Correo';
@@ -26,7 +40,7 @@
       $errorGenero = 'Debe seleccionar un género';
     }
 
-    if($errorNombre==="" && $errorEmail==="" && $errorGenero===""){
+    if($errorNombre==="" && $errorEmail==="" && $errorGenero==="" && $errorPassword===""){
       header('location:registrarUsuarioOK.php?us='.$_POST['userName'].'&&g='.$_POST['userGender'].'');
     }
 

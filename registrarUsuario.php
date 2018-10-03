@@ -36,11 +36,25 @@
 
     </div>
     <div class="form-content container centrar-contenido">
+      <?php
+      if($errorNombre !=""){
+        echo $errorNombre;
+      }elseif($errorPhone!="") {
+        echo "<h5>";
+        echo $errorPhone;
+      }elseif($errorEmail!="") {
+        echo "<h5>";
+        echo $errorEmail;
+      }elseif ($errorPassword!="") {
+        echo "<h5>";
+        echo $errorPassword;
+      }elseif ($errorGenero!="") {
+        echo "<h5>";
+        echo $errorGenero;
+      }
+       ?>
       <div class="row justify-content">
         <div class="col-12 col-md-8 col-lg-6">
-
-
-
           <form class="row justify-content" action= <?php echo $targetForm; ?> method="post">
 
             <label class="etiqueta col-12 col-md-10 col-lg-10" for="nombreDelUsuario">Nombre:</label>
@@ -52,14 +66,13 @@
             <br><br>
 
             <label class="etiqueta col-12  col-md-10 col-lg-10">Teléfono:</label>
-            <input class="col-12 col-md-10 col-lg-10" type="tel" placeholder="011-111-1111" name="userPhone" value=<?php echo $_POST['userPhone']??'';?>>
+            <input class="col-12 col-md-10 col-lg-10" type="tel" placeholder="Ingrese su teléfono" name="userPhone" value=<?php echo $_POST['userPhone']??'';?>>
 
             <br><br>
 
             <label class="etiqueta col-12 col-md-10 col-lg-10">Email:</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="text" name="userMail" value=<?php echo $_POST['userMail']??'';?>>
-            <?php echo $errorEmail; ?>
+            <input class="col-12 col-md-10 col-lg-10" type="text" name="userMail" placeholder="example@example.com" value=<?php echo $_POST['userMail']??'';?>>
 
             <br><br>
 
@@ -72,7 +85,7 @@
 
             <label class="etiqueta col-12 col-md-10 col-lg-10" for="">Repetir contraseña:</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="20" value=<?php echo $_POST['userPass']??'';?> >
+            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPassCheck" maxlength="20" value=<?php echo $_POST['userPassCheck']??'';?> >
 
             <br><br>
 

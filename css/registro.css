@@ -48,6 +48,12 @@ input{
 form{
   flex-wrap: wrap;
 }
+h5{
+  font-size: 15px;
+}
+br{
+  font-size:5px;
+}
 
 .nice-bottom{
   background-color: rgba(220, 53, 69,1);
