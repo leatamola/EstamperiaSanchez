@@ -1,0 +1,3 @@
+<?php
+
+$newPurchase = "registrarUsuario.php";

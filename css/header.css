@@ -1,5 +1,6 @@
 
 nav{
+	position: sticky;
 	list-style: none;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
