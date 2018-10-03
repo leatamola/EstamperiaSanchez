@@ -13,11 +13,14 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <title> Home - Estamperia Sanchez</title>
+  <title> Registro - Estamperia Sanchez</title>
 
 </head>
 <body>
 
+	<!-- VALIDATION FUTURE MODELS -->
+  <?php include('Models/validacionLogIn.php');
+  ?>
 	<!-- HEADER -->
   <?php include ('header.php'); ?>
 
@@ -25,20 +28,17 @@
   <section class="registro container">
     <div class="container">
       <div class="row centrar-contenido">
+        <!--METER EL CARRITO Esto es provisorio-->
         <div class="form-title col-12 col-lg 6">
           <h2>
+
             <?php
-              if($_GET['g']=='f'){
-                echo "Bienvenida, ";
-              }else{
-                echo "Bienvenido, ";
-              }
-              echo $_GET['us'];
+              echo 'Hola'.$_GET['us'].'<br>';
+              echo "Home en construcción."
             ?>
           </h2>
-          <h3> Se registró exitosamente. </h2>
-          Antes de efectuar su primera compra, deberá verificar su mail.
-          <!--<?php var_dump($_GET); ?>-->
+          <h3> Logueo exitoso </h2>
+          <?php //var_dump($_GET); ?>-->
         </div>
       </div>
 

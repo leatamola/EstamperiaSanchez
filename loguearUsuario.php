@@ -19,7 +19,7 @@
 <body>
 
 	<!-- VALIDATION FUTURE MODELS -->
-  <?php include('Models/validacionRegistro.php');
+  <?php include('Models/validacionLogueo.php');
   ?>
 	<!-- HEADER -->
   <?php include ('header.php'); ?>
@@ -29,8 +29,8 @@
     <div class="container">
       <div class="row centrar-contenido">
         <div class="form-title col-12 col-lg 6">
-          <h2> REGISTRARSE </h1>
-          <h3> Tus mejores estampas, a un click </h2>
+          <h2> LOG IN </h1>
+          <h3> Más que una estampa, tu estilo</h2>
         </div>
       </div>
 
@@ -38,8 +38,6 @@
     <div class="form-content container centrar-contenido">
       <div class="row justify-content">
         <div class="col-12 col-md-8 col-lg-6">
-
-
 
           <form class="row justify-content" action= <?php echo $targetForm; ?> method="post">
 
@@ -51,14 +49,10 @@
 
             <br><br>
 
-            <label class="etiqueta col-12  col-md-10 col-lg-10">Teléfono:</label>
-            <input class="col-12 col-md-10 col-lg-10" type="tel" placeholder="011-111-1111" name="userPhone" value=<?php echo $_POST['userPhone']??'';?>>
-
-            <br><br>
 
             <label class="etiqueta col-12 col-md-10 col-lg-10">Email:</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="text" name="userMail" value=<?php echo $_POST['userMail']??'';?>>
+            <input class="col-12 col-md-10 col-lg-10" type="text" name="userMail" placeholder="example@example.com"  value=<?php echo $_POST['userMail']??'';?>>
             <?php echo $errorEmail; ?>
 
             <br><br>
@@ -66,34 +60,12 @@
 
             <label class="etiqueta col-12 col-md-10 col-lg-10" for="">Contraseña:</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="20" value=<?php echo $_POST['userPass']??'';?> >
+            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="20" placeholder="*******" value=<?php echo $_POST['userPass']??'';?> >
 
-            <br><br>
 
-            <label class="etiqueta col-12 col-md-10 col-lg-10" for="">Repetir contraseña:</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="20" value=<?php echo $_POST['userPass']??'';?> >
-
-            <br><br>
-
-            <label class="etiqueta col-12 offset-md-1 col-md-2 col-lg-2">Género</label>
-              <label class="col-6 col-md-4"><input type="radio" name="userGender" value="m"
-                <?php
-                if(!isset($_POST['userGender'])){
-                  echo '';
-                }else if ($_POST['userGender']==='m') {
-                    echo 'checked';}?> > Masculino</label>
-              <label  class="col-6 col-md-4"><input type="radio" name="userGender" value="f"
-                <?php
-                if(!isset($_POST['userGender'])){
-                  echo '';
-                }else if ($_POST['userGender']==='f') {
-                    echo 'checked';}?> > Femenino</label><label class="col-0 col-md-1"></label>
-              <?php echo $errorGenero; ?>
-
-            <br><br>
             <div class="col-12 centrar-contenido">
-              <button class="nice-bottom"type="submit">Registrarse</button>
+              <button class="nice-bottom"type="submit"> Iniciar sesión </button>
             </div>
           </form>
         </div>

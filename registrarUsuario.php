@@ -79,13 +79,13 @@
 
             <label class="etiqueta col-12 col-md-10 col-lg-10" for="">Contraseña:</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="20" value=<?php echo $_POST['userPass']??'';?> >
+            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPass" maxlength="20"  placeholder="********" value=<?php echo $_POST['userPass']??'';?> >
 
             <br><br>
 
             <label class="etiqueta col-12 col-md-10 col-lg-10" for="">Repetir contraseña:</label>
 
-            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPassCheck" maxlength="20" value=<?php echo $_POST['userPassCheck']??'';?> >
+            <input class="col-12 col-md-10 col-lg-10" type="password" name="userPassCheck" maxlength="20" placeholder="********" value=<?php echo $_POST['userPassCheck']??'';?> >
 
             <br><br>
 
@@ -101,10 +101,9 @@
                 if(!isset($_POST['userGender'])){
                   echo '';
                 }else if ($_POST['userGender']==='f') {
-                    echo 'checked';}?> > Femenino</label><label class="col-0 col-md-1"></label>
+                    echo 'checked';}?> > Femenino</label><label class="none col-0 col-md-1"></label>
               <?php echo $errorGenero; ?>
 
-            <br><br>
             <div class="col-12 centrar-contenido">
               <button class="nice-bottom"type="submit">Registrarse</button>
             </div>
