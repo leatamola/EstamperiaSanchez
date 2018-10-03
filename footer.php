@@ -9,15 +9,15 @@
       <div class="col-12">
       <div class="social d-flex justify-content-center">
         <a href="https://www.facebook.com/sanchez.stamp" class="mx-2">
-              <i class="fab fa-facebook-square" id="facebookIcon"></i>
+              <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com/sanchez.estampados" class="mx-2">
-              <i class="fab fa-instagram" id="instagramIcon"></i>
+              <i class="fab fa-instagram"></i>
             </a>
             <a href="http://www.youtube.com/..." class="mx-2">
-              <i class="fab fa-youtube" id="youtubeIcon"></i>
+              <i class="fab fa-youtube"></i>
             </a>
-
+            
         </div>
       </div>
     </div>
