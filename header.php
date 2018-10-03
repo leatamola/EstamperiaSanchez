@@ -31,7 +31,7 @@
           </li>
       </ul>
         <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
-          <input class="form-control mr-sm-2" type="Buscar" placeholder="Search" aria-label="Buscar">
+          <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
           <button class="btn btn-danger mr-auto ml-auto" type="submit">Buscar</button>
         </form>
 
