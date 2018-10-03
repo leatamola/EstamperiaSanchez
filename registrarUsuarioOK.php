@@ -13,14 +13,11 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <title> Registro - Estamperia Sanchez</title>
+  <title> Home - Estamperia Sanchez</title>
 
 </head>
 <body>
 
-	<!-- VALIDATION FUTURE MODELS -->
-  <?php include('Models/validacionRegistro.php');
-  ?>
 	<!-- HEADER -->
   <?php include ('header.php'); ?>
 

@@ -1,42 +1,40 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="index.php"><img src="imagenes/logo.png" width="160px" class="d-inline-block align-top" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
-        <ul class="navbar-nav mr-auto ml-auto">
-          <li class="navbar-brand">
-              <a class="nav-link" href="index.php">HOME<span class="sr-only"></span></a>
-            </li>
-            <li class="navbar-brand">
-              <a class="nav-link" href="faqs.php">FAQS</a>
-            </li>
-            <li class="navbar-brand dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">PRODUCTOS</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Remeras</a>
-                <a class="dropdown-item" href="#">Camperas</a>
-                <a class="dropdown-item" href="#">Pantalones</a>
-            </div>
-          </li>
-          <li class="navbar-brand">
-            <a class="nav-link" href="#">LOGIN</a>
-          </li>
-          <li class="navbar-brand">
-              <a class="nav-link" href="registrarUsuario.php">REGISTER</a>
-          </li>
-          <li class="navbar-brand carrito">
-             <a class="nav-link" href="#"><img src="imagenes/carrito2.png" style="width: 30px"></a>
-          </li>
-      </ul>
-        <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
-          <input class="form-control mr-sm-2" type="Buscar" placeholder="Search" aria-label="Buscar">
-          <button class="btn btn-danger mr-auto ml-auto" type="submit">Buscar</button>
-        </form>
+  <h1 id="logo"><img src="imagenes/logo.png"></h1>
 
-      </div>
+  <nav id="navegacion">
+
+            <div class="control-menu">
+                <a href="#navegacion" class="open"><span>MENU</span></a>
+                <a href="#" class="close"><span>CERRAR</span></a>
+
+            </div>
+
+    
+    <ul class="nav-items">
+       
+            <li><a href="index.php"> <span>HOME</span></a></li>
+            <li><a href="#"><span>FAQS</span></a></li>
+            <li id="sub-menu"><a href="#"><span>PRODUCTOS</span></a>
+                <ul class="productos">
+                    <li><a class="" href="#">Remeras</a></li>
+                    <li><a class="" href="#">Camperas</a></li>
+                    <li><a class="" href="#">Pantalones</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span>LOGIN</span></a></li>
+            <li><a href="#"><span>REGISTER</span></a></li>
+            <li><a class="" href="#"><img src="imagenes/carrito2.png" style="width: 30px"></a></li>
+
+            <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
+                <input class="form-control mr-sm-2" type="Buscar" placeholder="Search">
+                <button class="btn btn-danger mr-auto ml-auto" type="submit">Buscar</button>
+            </form>
+
+
+    </ul>
+
       <br><br><br><br>
+
   </nav>
 
 
