@@ -59,3 +59,33 @@ footer i{
 .seguinos{
   padding-top: 2px;
 }
+
+
+#facebookIcon{
+  color: #29487D;
+  transition: 150ms;
+}
+#facebookIcon:hover{
+  color: black;
+}
+
+
+#instagramIcon{
+  color: #DD2A7B;
+  transition: 150ms;
+}
+#instagramIcon:hover{
+  color: black;
+}
+
+#youtubeIcon{
+  color: red;
+  transition: 150ms;
+}
+#youtubeIcon:hover{
+  color: black;
+}
+
+.hrFooter{
+  width: 100%;
+}

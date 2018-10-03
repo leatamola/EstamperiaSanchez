@@ -1,5 +1,5 @@
 <footer>
-  <hr>
+  <hr class="hrFooter">
   <div class="container-fluid">
     <div class="seguinos" >
       <div class="col-12">
@@ -7,48 +7,48 @@
         <h5>SEGUINOS EN</h5>
       </div>
       <div class="col-12">
-      <div class="social d-flex justify-content-center">
-        <a href="https://www.facebook.com/sanchez.stamp" class="mx-2">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/sanchez.estampados" class="mx-2">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="http://www.youtube.com/..." class="mx-2">
-              <i class="fab fa-youtube"></i>
-            </a>
-            
+        <div class="social d-flex justify-content-center">
+          <a href="https://www.facebook.com/sanchez.stamp" class="mx-2">
+                <i class="fab fa-facebook-square" id="facebookIcon"></i>
+              </a>
+              <a href="https://www.instagram.com/sanchez.estampados" class="mx-2">
+                <i class="fab fa-instagram" id="instagramIcon"></i>
+              </a>
+              <a href="http://www.youtube.com/..." class="mx-2">
+                <i class="fab fa-youtube" id="youtubeIcon"></i>
+              </a>
+
         </div>
       </div>
     </div>
   </div>
 
-<hr>
+<hr class="hrFooter">
 
   <div class="container" id="footer1">
     <div class="row">
       <div class="col-md-4 mb-3 mb-md-0">
         <i class="fas fa-truck"></i>
         <h4>ENVIOS GRATIS</h4>
-          <hr>
+          <hr class="hrFooter">
         <div class="small text-black-50">PARA COMPRAS DE MÁS DE $100</div>
-        <hr>
+        <hr class="hrFooter">
       </div>
 
       <div class="col-md-4 mb-3 mb-md-0">
         <i class="fas fa-credit-card"></i>
         <h4>HASTA 12 CUOTAS SIN INTERÉS</h4>
-          <hr>
+          <hr class="hrFooter">
         <div class="small text-black-50">CON TODAS LAS TARJETAS DE CRÉDITO</div>
-        <hr>
+        <hr class="hrFooter">
       </div>
 
       <div class="col-md-4 mb-3 mb-md-0">
         <i class="fas fa-lock"></i>
         <h4>SITIO SEGURO</h4>
-          <hr>
+          <hr class="hrFooter">
         <div class="small text-black-50">PROTEGEMOS TUS DATOS</div>
-        <hr>
+        <hr class="hrFooter">
       </div>
 
     </div>
