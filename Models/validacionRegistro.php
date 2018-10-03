@@ -33,11 +33,11 @@
   //  $targetForm = "registrarUsuario.php";
   //agrego más variables por get: &
 
-    var_dump($_POST);
-    var_dump($errorEmail);
-    var_dump($errorGenero);
-    var_dump($errorNombre);
-    var_dump($targetForm);
+    //var_dump($_POST);
+    //var_dump($errorEmail);
+    //var_dump($errorGenero);
+    //var_dump($errorNombre);
+    //var_dump($targetForm);
 
   }
 
