@@ -60,20 +60,17 @@
 						<h6>CATEGORIA 1</h6>
 					</a>
 				</div>
-
 				<div class="categoria2">
 					<a href="#">
 						<img src="imagenes/BB_001.png" alt="categoria1">
 					</a>
 				</div>
-
 				<div class="categoria2">
 					<a href="#">
 						<img src="imagenes/BB_001.png" alt="categoria1">
 					</a>
 				</div>
 				
-
 
 			</div>
 		</div>
