@@ -119,21 +119,21 @@ ul.nav-items {
     clear: both;
     height: 0;
     overflow: hidden;
-    transition: height 0.4s ease-in-out 0s, background-color 2s ease 0s; 
+    transition: height 0.4s ease-in-out 0s, background-color 2s ease 0s;
     cursor: pointer;
 }
 
 #navegacion:target ul.nav-items {
     background: #eceff1 none repeat scroll 0 0;
     height: 15.8em;
-    transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s; 
+    transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s;
 }
 
 
-.close { 
+.close {
    display:none;
 }
-        
+
 #navegacion:target .open {
       display: none;
 }
@@ -184,7 +184,8 @@ nav form{
         overflow: visible;
         height: auto;
         display: flex;
-        
+				width: 100%;
+
     }
 
     ul.nav-items a{
@@ -196,6 +197,6 @@ nav form{
     nav form{
         display: block;
     }
-    
+
 
 }

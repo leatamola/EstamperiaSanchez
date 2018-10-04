@@ -9,7 +9,7 @@ body hr{
 	width: 420px;
 	margin: 8px;
 	opacity: 0.8;
-    transition: 300ms;
+  transition: 300ms;
 
 }
 
@@ -18,7 +18,7 @@ body hr{
 }
 
 .categoria1{
-	
+
 }
 
 #categorias{
@@ -35,5 +35,3 @@ h6{
 	top: 200px;
 	margin: 0 auto;
 }
-
-
