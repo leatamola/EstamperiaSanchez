@@ -102,7 +102,7 @@
                   echo '';
                 }else if ($_POST['userGender']==='f') {
                     echo 'checked';}?> > Femenino</label><label class="none col-0 col-md-1"></label>
-              <?php echo $errorGenero; ?>
+              
 
             <div class="col-12 centrar-contenido">
               <button class="nice-bottom"type="submit">Registrarse</button>

@@ -45,7 +45,7 @@
 		</a>
 	</div>
 
-	<div class="container-fluid">
+	<!-- <div class="container-fluid">
 
 		<br><br><br>
 
@@ -53,25 +53,25 @@
 
 			<div class="col-12" id="categorias">
 				<div class="categoria1">
-					<a href="producto.php">
+					<a href="#">
 						<img src="imagenes/BB_001.png" alt="categoria1">
 						<h6>CATEGORIA 1</h6>
 					</a>
 				</div>
 				<div class="categoria2">
-					<a href="producto.php">
+					<a href="#">
 						<img src="imagenes/BB_001.png" alt="categoria1">
 					</a>
 				</div>
 				<div class="categoria2">
-					<a href="producto.php">
+					<a href="#">
 						<img src="imagenes/BB_001.png" alt="categoria1">
 					</a>
 				</div>
 
 
 			</div>
-		</div>
+		</div> -->
 
 
 
