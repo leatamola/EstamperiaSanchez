@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
         <ul class="navbar-nav mr-auto ml-auto">
           <li class="navbar-brand">
-              <a class="nav-link" href="index.php">HOME<span class="sr-only"></span></a>
+              <a class="nav-link" href="index.php">INICIO<span class="sr-only"></span></a>
             </li>
             <li class="navbar-brand">
               <a class="nav-link" href="faqs.php">FAQS</a>
@@ -24,14 +24,14 @@
             <a class="nav-link" href="loguearUsuario.php">LOGIN</a>
           </li>
           <li class="navbar-brand">
-              <a class="nav-link" href="registrarUsuario.php">REGISTER</a>
+              <a class="nav-link" href="registrarUsuario.php">REGISTRO</a>
           </li>
           <li class="navbar-brand carrito">
              <a class="nav-link" href="#"><img src="imagenes/carrito2.png" style="width: 30px"></a>
           </li>
       </ul>
         <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
-          <input class="form-control mr-sm-2" type="Buscar" placeholder="Search" aria-label="Buscar">
+          <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar..." aria-label="Buscar">
           <button class="btn btn-danger mr-auto ml-auto" type="submit">Buscar</button>
         </form>
 
