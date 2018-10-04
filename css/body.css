@@ -2,29 +2,35 @@ body hr{
   color: black;
   width: 70px;
   text-align: center;
-  size: 30px;
+  size: 30%;
 }
 
-#categorias img{
-	width: 420px;
-	margin: 8px;
-	opacity: 0.8;
+.categorias{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.imagenesCatalogo{
+  width: 100%;
+}
+
+
+
+#categoriasImg{
+  width: 100%;
+  margin: 10px 0px;
+  opacity: 1;
   transition: 300ms;
 
 }
 
-#categorias img:hover{
-	opacity: 2;
+#categoriasImg:hover{
+	opacity: 0.8;
 }
 
-.categoria1{
 
-}
 
-#categorias{
-	display: flex;
-	position: relative;
-}
 
 h6{
 	position: absolute;
