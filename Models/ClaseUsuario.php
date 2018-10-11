@@ -7,9 +7,15 @@ class Usuario{
     private $direccion;
     private $historialCompra = [];
 
-    public function __construct()
+    public function __construct($nombre, $pass, $email,$tel, Direccion $dire)
     {
-
+      $this->nombre = $nombre;
+      $this->pass = $pass;
+      $this->email = $email;
+      $this->tel = $tel;
+      $this->tel = $tel;
+      $this->direccion = $dire;
+      //$this->historialCompra = [];
     }
 
     public function getNombre()
@@ -41,13 +47,17 @@ class Usuario{
     {
         $this->email = $inputEmail;
     }
+    public function setDireccion(Direccion $inputDireccion)
+    {
+        $this->direccion = $inputEmail;
+    }
     public function setTelefono($inputTelefono)
     {
         $this->telefono = $inputTelefono;
     }
-    public function agregarCarrito(Carrito $carrito)
+    public function agregarCompra(Compra $compra)
     {
-       $this->historialCompra[] = $carrito;
+       $this->historialCompra[] = $compra;
     }
 
 

@@ -13,15 +13,15 @@ abstract class Producto{
 
     public function getModelo()
     {
-        echo $this->modelo;
+        return $this->modelo;
     }
     public function getColor()
     {
-        echo $this->color;
+        return $this->color;
     }
     public function getFoto()
     {
-        echo $this->foto;
+        return $this->foto;
     }
     public function setModelo($inputModelo)
     {
