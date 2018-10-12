@@ -6,11 +6,8 @@
     </button>
     <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
         <ul class="navbar-nav mr-auto ml-auto">
-          <li class="navbar-brand">
-              <a class="nav-link" href="index.php">INICIO<span class="sr-only"></span></a>
-            </li>
             <li class="navbar-brand">
-              <a class="nav-link" href="faqs.php">FAQS</a>
+              <a class="nav-link" href="faqs.php">¿PREGUNTAS?</a>
             </li>
             <li class="navbar-brand dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">PRODUCTOS</a>
@@ -21,10 +18,10 @@
             </div>
           </li>
           <li class="navbar-brand">
-            <a class="nav-link" href="loguearUsuario.php">LOGIN</a>
+            <a class="nav-link" href="loguearUsuario.php">INGRESA</a>
           </li>
           <li class="navbar-brand">
-              <a class="nav-link" href="registrarUsuario.php">REGISTRO</a>
+              <a class="nav-link" href="registrarUsuario.php">REGISTRATE</a>
           </li>
           <li class="navbar-brand carrito">
              <a class="nav-link" href="#"><img src="imagenes/carrito2.png" style="width: 30px"></a>
