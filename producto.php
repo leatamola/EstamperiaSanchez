@@ -52,7 +52,7 @@
               </div>
             </div>
 
-            <strong>SELECCIONA UN TALLE*</strong>
+            <strong>SELECCIONA UN TALLE</strong>
               <br>
 
                 <label class="elDelTalle"> <input type="radio" name="shirtSize" value="XS"> <span class="Talle"> XS </span>  </label>
@@ -65,14 +65,14 @@
             <!-- TALLES HOMBRE Y MUJER -->
 
             <div class="info">
-              <span> <strong>*</strong></span>
+              <span> <strong></strong></span>
 
               <button type="button" class="btn btn-query" data-toggle="collapse" href="#TallesHombre" role="button" aria-expanded="false" aria-controls="collapseExample">
-                TALLES<span>HOMBRE</span>
+                TALLES<span> HOMBRE</span>
               </button>
 
               <button type="button" class="btn btn-query" data-toggle="collapse" href="#TallesMujer" role="button" aria-expanded="false" aria-controls="collapseExample">
-                TALLES<span>DAMA</span>
+                TALLES<span> DAMA</span>
               </button>
 
               <div class="answers collapse" id="TallesHombre" >

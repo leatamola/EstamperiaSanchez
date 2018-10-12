@@ -51,11 +51,30 @@
       }elseif ($errorGenero!="") {
         echo "<h5>";
         echo $errorGenero;
+      }elseif ($errorFoto!="") {
+        echo "<h5>";
+        echo $errorFoto;
       }
+
+      if( $_FILES['foto']['error'] === UPLOAD_ERR_OK ){
+        //echo 'voy a mover el archivo';
+        $ext = pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
+        if( $ext == 'jpeg' ||  $ext == 'png' ){
+          move_uploaded_file($_FILES['foto']['tmp_name'], 'imagenes/avatars/'.$_POST['userName'].'.'.$ext);
+        }else{
+          $errorFoto = 'El Formato es inválido';
+        }
+      }
+
+
+
+
+
+
        ?>
       <div class="row justify-content">
         <div class="col-12 col-md-8 col-lg-6">
-          <form class="row justify-content" action= <?php echo $targetForm; ?> method="post">
+          <form class="row justify-content" action= <?php echo $targetForm; ?> method="post" enctype="multipart/form-data">
 
             <label class="etiqueta col-12 col-md-10 col-lg-10" for="nombreDelUsuario">Nombre:</label>
 
@@ -67,6 +86,7 @@
 
             <label class="etiqueta col-12  col-md-10 col-lg-10">Teléfono:</label>
             <input class="col-12 col-md-10 col-lg-10" type="tel" placeholder="Ingrese su teléfono" name="userPhone" value=<?php echo $_POST['userPhone']??'';?>>
+
 
             <br><br>
 
@@ -102,7 +122,15 @@
                   echo '';
                 }else if ($_POST['userGender']==='f') {
                     echo 'checked';}?> > Femenino</label><label class="none col-0 col-md-1"></label>
-              
+
+
+              <br><br>
+              <label for="">
+                Avatar:
+                <input type="file" name="foto" value="">
+
+              </label>
+
 
             <div class="col-12 centrar-contenido">
               <button class="nice-bottom"type="submit">Registrarse</button>
