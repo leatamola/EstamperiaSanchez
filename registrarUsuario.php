@@ -51,12 +51,9 @@
       }elseif ($errorGenero!="") {
         echo "<h5>";
         echo $errorGenero;
-      }elseif ($errorFoto!="") {
-        echo "<h5>";
-        echo $errorFoto;
       }
 
-      if( $_FILES['foto']['error'] === UPLOAD_ERR_OK ){
+      if( isset($_FILES['foto']) && $_FILES['foto']['error'] === UPLOAD_ERR_OK ){
         //echo 'voy a mover el archivo';
         $ext = pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
         if( $ext == 'jpeg' ||  $ext == 'png' ){

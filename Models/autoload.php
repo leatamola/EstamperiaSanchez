@@ -1,0 +1,10 @@
+<?php
+include_onde('ClaseConexion');
+include_onde('ClaseValidacion.php');
+include_onde('Autenticador.php');
+include_onde('ClaseProducto.php');
+include_onde('ClaseDireccion.php');
+include_onde('ClaseUsuario');
+include_onde('ClaseCarrito');
+include_onde('ClaseConexion');
+include_onde('ClaseCompra');

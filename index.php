@@ -54,37 +54,37 @@
 
 			<div class="col-md-4 mb-10px px-5px">
 				<div class="card border-0 text-white text-center">
-					<img src="imagenes/categorias/cate1.png" alt="calse remera 1" id="categoriasImg">
+					<img src="imagenes/Categorias/cate1.png" alt="calse remera 1" id="categoriasImg">
 				</div>
 			</div>
 
 			<div class="col-md-4 mb-10px px-5px">
 				<div class="card border-0 text-white text-center">
-					<img src="imagenes/categorias/cate2.png" alt="calse remera 1" id="categoriasImg">
+					<img src="imagenes/Categorias/cate2.png" alt="calse remera 1" id="categoriasImg">
 				</div>
 			</div>
 
 			<div class="col-md-4 mb-10px px-5px">
 				<div class="card border-0 text-white text-center">
-					<img src="imagenes/categorias/cate3.png" alt="calse remera 1"id="categoriasImg">
+					<img src="imagenes/Categorias/cate3.png" alt="calse remera 1"id="categoriasImg">
 				</div>
 			</div>
 
 			<div class="col-md-4 mb-10px px-5px">
 				<div class="card border-0 text-white text-center">
-					<img src="imagenes/categorias/cate4.png" alt="calse remera 1" id="categoriasImg">
+					<img src="imagenes/Categorias/cate4.png" alt="calse remera 1" id="categoriasImg">
 				</div>
 			</div>
 
 			<div class="col-md-4 mb-10px px-5px">
 				<div class="card border-0 text-white text-center">
-					<img src="imagenes/categorias/cate5.png" alt="calse remera 1" id="categoriasImg">
+					<img src="imagenes/Categorias/cate5.png" alt="calse remera 1" id="categoriasImg">
 				</div>
 			</div>
 
 			<div class="col-md-4 mb-10px px-5px">
 				<div class="card border-0 text-white text-center" id="backgroundCate">
-					<img src="imagenes/categorias/cate6.png" alt="calse remera 1"id="categoriasImg">
+					<img src="imagenes/Categorias/cate6.png" alt="calse remera 1"id="categoriasImg">
 				</div>
 			</div>
 
