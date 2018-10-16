@@ -1,3 +1,15 @@
+<?php
+include_once('Models/autoload.php');
+include_once('Models/validacionRegistro.php');
+
+
+
+   var_dump($_POST);
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +31,7 @@
 <body>
 
 	<!-- VALIDATION FUTURE MODELS -->
-  <?php include('Models/validacionRegistro.php');
-  ?>
+
 	<!-- HEADER -->
   <?php include ('header.php'); ?>
 
@@ -71,7 +82,7 @@
        ?>
       <div class="row justify-content">
         <div class="col-12 col-md-8 col-lg-6">
-          <form class="row justify-content" action= <?php echo $targetForm; ?> method="post" enctype="multipart/form-data">
+          <form class="row justify-content" action="" method="post" enctype="multipart/form-data">
 
             <label class="etiqueta col-12 col-md-10 col-lg-10" for="nombreDelUsuario">Nombre:</label>
 

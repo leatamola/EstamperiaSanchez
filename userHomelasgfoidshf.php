@@ -19,7 +19,7 @@
 <body>
 
 	<!-- VALIDATION FUTURE MODELS -->
-  <?php include('Models/validacionLogIn.php');
+  <?php include('Models/validacionLogueo.php');
   ?>
 	<!-- HEADER -->
   <?php include ('header.php'); ?>

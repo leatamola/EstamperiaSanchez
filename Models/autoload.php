@@ -1,10 +1,10 @@
 <?php
-include_onde('ClaseConexion');
-include_onde('ClaseValidacion.php');
-include_onde('Autenticador.php');
-include_onde('ClaseProducto.php');
-include_onde('ClaseDireccion.php');
-include_onde('ClaseUsuario');
-include_onde('ClaseCarrito');
-include_onde('ClaseConexion');
-include_onde('ClaseCompra');
+include_once('ClaseConexion.php');
+// include_onde('ClaseValidacion.php');
+
+include_once('Autenticador.php');
+include_once('ClaseProducto.php');
+include_once('ClaseDireccion.php');
+include_once('ClaseUsuario.php');
+include_once('ClaseCarrito.php');
+include_once('ClaseCompra.php');

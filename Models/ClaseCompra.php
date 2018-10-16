@@ -9,3 +9,4 @@ class Compra{
       $this->modoPago = $modoPago;
       $this->carrito = $carrito;
     }
+  }
