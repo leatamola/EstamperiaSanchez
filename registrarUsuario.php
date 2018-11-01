@@ -1,12 +1,12 @@
 <?php
 include_once('Models/autoload.php');
-include_once('Models/validacionRegistro.php');
-
-
-
-   var_dump($_POST);
-
-
+//al validador le mando un array de datos, puede ser post get files EventConfig
+//retorn true y llamo a autenticador  o base de datos para que haga la escritura
+//if ect
+$validaRegisto = new Validacion();
+$validaRegisto->validarRegistro();
+//include_once('Models/validacionRegistro.php');
+   //var_dump($_POST);
 ?>
 
 
@@ -48,36 +48,31 @@ include_once('Models/validacionRegistro.php');
     </div>
     <div class="form-content container centrar-contenido">
       <?php
-      if($errorNombre !=""){
-        echo $errorNombre;
-      }elseif($errorPhone!="") {
+      if($validaRegisto->errorNombre !=""){
+        echo $validaRegisto->errorNombre;
+      }elseif($validaRegisto->errorPhone!="") {
         echo "<h5>";
-        echo $errorPhone;
-      }elseif($errorEmail!="") {
+        echo $validaRegisto->errorPhone;
+      }elseif($validaRegisto->errorEmail!="") {
         echo "<h5>";
-        echo $errorEmail;
-      }elseif ($errorPassword!="") {
+        echo $validaRegisto->errorEmail;
+      }elseif ($validaRegisto->errorPassword!="") {
         echo "<h5>";
-        echo $errorPassword;
-      }elseif ($errorGenero!="") {
+        echo $validaRegisto->errorPassword;
+      }elseif ($validaRegisto->errorGenero!="") {
         echo "<h5>";
-        echo $errorGenero;
+        echo $validaRegisto->errorGenero;
       }
 
-      if( isset($_FILES['foto']) && $_FILES['foto']['error'] === UPLOAD_ERR_OK ){
-        //echo 'voy a mover el archivo';
-        $ext = pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
-        if( $ext == 'jpeg' ||  $ext == 'png' ){
-          move_uploaded_file($_FILES['foto']['tmp_name'], 'imagenes/avatars/'.$_POST['userName'].'.'.$ext);
-        }else{
-          $errorFoto = 'El Formato es inválido';
-        }
-      }
-
-
-
-
-
+      // if( isset($_FILES['foto']) && $_FILES['foto']['error'] === UPLOAD_ERR_OK ){
+      //   //echo 'voy a mover el archivo';
+      //   $ext = pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
+      //   if( $ext == 'jpeg' ||  $ext == 'png' ){
+      //     move_uploaded_file($_FILES['foto']['tmp_name'], 'imagenes/avatars/'.$_POST['userName'].'.'.$ext);
+      //   }else{
+      //     $errorFoto = 'El Formato es inválido';
+      //   }
+      // }
 
        ?>
       <div class="row justify-content">
