@@ -20,6 +20,8 @@
 
 	<!-- VALIDATION FUTURE MODELS -->
   <?php include('Models/validacionLogueo.php');
+        include('Models/claseBaseDeDatos.php');
+        include('Models/Autenticador.php');
   ?>
 	<!-- HEADER -->
   <?php include ('header.php'); ?>
@@ -41,13 +43,6 @@
 
           <form class="row justify-content" action= <?php echo $targetForm; ?> method="post">
 
-            <label class="etiqueta col-12 col-md-10 col-lg-10" for="nombreDelUsuario">Nombre:</label>
-
-              <input class="col-12 col-md-10 col-lg-10" type="text" id="nombreDelUsuario" placeholder="Ingrese su nombre" name="userName"
-               value = <?php echo $_POST['userName']??'';?>>
-
-
-            <br><br>
 
 
             <label class="etiqueta col-12 col-md-10 col-lg-10">Email:</label>

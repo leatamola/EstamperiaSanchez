@@ -1,6 +1,6 @@
 <?php
 
-class Conexion{
+class BaseDeDatos{
 
   private const usuario='root';
   private const pass='root';
@@ -19,8 +19,13 @@ class Conexion{
     }
   }
 
+  public function consultarUsuario($email, $pass){
+    $query=$this->conex->query("'SELECT Mail, Pass FROM usuarios WHERE'.$email. '= Mail AND'. $pass .'= Pass'");
+    $usuario = $query->fetch(PDO::FETCH_ASSOC);
+    return $usuario;
+  }
 }
 
-$conex = new Conexion();
+
 
 //var_dump(Conexion::usuario);
