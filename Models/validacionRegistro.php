@@ -60,7 +60,7 @@
 
         $ins->execute();
 
-        var_dump($ins);
+        //var_dump($ins);
       // header('location:registrarUsuarioOK.php?us='.$_POST['userName'].'&&g='.$_POST['userGender'].'');
     }
       catch( PDOException $error ){
