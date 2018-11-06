@@ -24,6 +24,27 @@ class BaseDeDatos{
     $usuario = $query->fetch(PDO::FETCH_ASSOC);
     return $usuario;
   }
+  public function agregarUsuario($datos){
+    try{
+      $sqlInsert = 'INSERT INTO usuarios (Nombre, Tel, Mail, Pass, sexo) VALUES ( :Nombre, :Tel, :Mail, :Pass, :sexo)';
+      $ins = $this->conex->prepare($sqlInsert);
+
+      $ins->bindValue(':Nombre', $datos['userName']);
+      $ins->bindValue(':Tel', $datos['userPhone']);
+      $ins->bindValue(':Mail', $datos['userMail']);
+      $ins->bindValue(':Pass', $datos['userPass']);
+      $ins->bindValue(':sexo', $datos['userGender']);
+
+      $ins->execute();
+      //var_dump($ins);
+    // header('location:registrarUsuarioOK.php?us='.$datos['userName'].'&&g='.$datos['userGender'].'');
+    }
+    catch( PDOException $error ){
+    // echo 'Error con la BD, contacta con el administrador del sistema';
+      echo 'El error es:'. $error->getMessage();
+    }
+
+  }
 }
 
 

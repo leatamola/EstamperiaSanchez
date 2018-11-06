@@ -2,8 +2,8 @@
 session_start();
 class Authenticador
 {
-
-  private $BaseDeDatos;
+  private $validador;
+  private $baseDeDatos;
 
 
   public function loguear($email, $pass){
@@ -16,8 +16,13 @@ class Authenticador
 
   }
 
-
+  public function registrar($datos){
+    if($this->validador->validarRegistro($datos)){
+      $this->baseDeDatos->agregarUsuario($datos);
+    }
+  }
   function __construct(){
-    $this->BaseDeDatos = new BaseDeDatos();
+    $this->baseDeDatos = new BaseDeDatos();
+    $this->validador = new Validacion();
   }
 }
