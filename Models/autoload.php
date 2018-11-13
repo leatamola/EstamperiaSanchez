@@ -1,5 +1,5 @@
 <?php
-include_once('ClaseConexion.php');
+include_once('ClaseBaseDeDatos.php');
 include_once('ClaseValidacion.php');
 
 //include_once('Autenticador.php');
