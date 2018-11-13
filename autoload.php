@@ -1,0 +1,9 @@
+<?php
+include_once('Models/ClaseBaseDeDatos.php');
+include_once('Models/ClaseValidacion.php');
+include_once('Models/Autenticador.php');
+include_once('Models/ClaseProducto.php');
+include_once('Models/ClaseDireccion.php');
+include_once('Models/ClaseUsuario.php');
+include_once('Models/ClaseCarrito.php');
+include_once('Models/ClaseCompra.php');

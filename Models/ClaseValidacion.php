@@ -1,11 +1,11 @@
 <?php
 class Validacion{
-  public $errorNombre= '';
-  public $errorPhone= '';
-  public $errorEmail= '';
-  public $errorPassword= '';
-  public $errorGenero= '';
-  public $targetForm= '';
+  private $errorNombre= '';
+  private $errorPhone= '';
+  private $errorEmail= '';
+  private $errorPassword= '';
+  private $errorGenero= '';
+  private $targetForm= '';
 
     public function validarRegistro($datos) //:bool
     {
@@ -35,9 +35,9 @@ class Validacion{
         }
 
         if( empty( $datos['userMail']) ){
-          $this->errorEmail = 'Debe ingresar el Correo';
+          $this->errorEmail = 'Debe ingresar el correo';
         }else if ( !filter_var( $datos['userMail'] , FILTER_VALIDATE_EMAIL )) {
-          $this->errorEmail = 'El Correo es inválido';
+          $this->errorEmail = 'El correo es inválido';
         }
 
         if(!isset($datos['userGender'])){
@@ -54,6 +54,38 @@ class Validacion{
         }
       }//note empty data
     }//end fun
+
+    public function validarLogueo($datos)
+      {
+          if($datos){
+            if( empty( $datos['userMail']) ){
+              $this->errorEmail = 'Debe ingresar el Correo';
+            }else if ( !filter_var( $datos['userMail'] , FILTER_VALIDATE_EMAIL )) {
+              $this->errorEmail = 'El correo es inválido';
+            }
+          }
+          if($this->errorMail === ""){
+            return false;
+          }else{
+            return true;
+          }
+      }
+
+    public function getErrorNombre(){
+      $this->errorNombre;
+    }
+    public function getErrorPhone(){
+      $this->errorPhone;
+    }
+    public function getErrorEmail(){
+      $this->errorEmail;
+    }
+    public function getErrorPassword(){
+      $this->errorPassword;
+    }
+    public function getErrorGenero(){
+      $this->errorGenero;
+    }
 
 
   }

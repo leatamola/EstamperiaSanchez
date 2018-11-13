@@ -19,9 +19,10 @@
 <body>
 
 	<!-- VALIDATION FUTURE MODELS -->
-  <?php include('Models/validacionLogueo.php');
-        include('Models/claseBaseDeDatos.php');
-        include('Models/Autenticador.php');
+  <?php include('Models/autoload.php');
+    $autenticador = new Autenticador();
+    $validaLogueo = $autenticador->getValidacion();
+    $autenticador->loguear($_POST);
   ?>
 	<!-- HEADER -->
   <?php include ('header.php'); ?>
@@ -41,14 +42,14 @@
       <div class="row justify-content">
         <div class="col-12 col-md-8 col-lg-6">
 
-          <form class="row justify-content" action= <?php echo $targetForm; ?> method="post">
+          <form class="row justify-content" action="" method="post">
 
 
 
             <label class="etiqueta col-12 col-md-10 col-lg-10">Email:</label>
 
             <input class="col-12 col-md-10 col-lg-10" type="text" name="userMail" placeholder="example@example.com"  value=<?php echo $_POST['userMail']??'';?>>
-            <?php echo $errorEmail; ?>
+            <?php echo $validaLogueo->getErrorEmail(); ?>
 
             <br><br>
 
