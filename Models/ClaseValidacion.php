@@ -64,10 +64,10 @@ class Validacion{
               $this->errorEmail = 'El correo es inválido';
             }
           }
-          if($this->errorMail === ""){
-            return false;
-          }else{
+          if($this->errorEmail === ""){
             return true;
+          }else{
+            return false;
           }
       }
 

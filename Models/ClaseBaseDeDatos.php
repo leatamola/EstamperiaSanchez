@@ -20,10 +20,21 @@ class BaseDeDatos{
   }
 
   public function consultarUsuario($email, $pass){
-    $query=$this->conex->query("'SELECT Mail, Pass FROM usuarios WHERE'.$email. '= Mail AND'. $pass .'= Pass'");
-    $usuario = $query->fetch(PDO::FETCH_ASSOC);
-    return $usuario;
+    try{
+      $sqlConsulta = 'SELECT * FROM usuarios WHERE Mail=:Mail and  Pass=:Pass';
+      $ins = $this->conex->prepare($sqlConsulta);
+      $ins->bindValue(':Mail', $email);
+      $ins->bindValue(':Pass', $pass);
+      $ins->execute();
+      $usu = $ins->fetch(PDO::FETCH_ASSOC);
+      return $usu;
+    }
+    catch ( PDOException $error ){
+    // echo 'Error con la BD, contacta con el administrador del sistema';
+      echo 'El error es:'. $error->getMessage();
+    }
   }
+
   public function agregarUsuario($datos){
     try{
       $sqlInsert = 'INSERT INTO usuarios (Nombre, Tel, Mail, Pass, sexo) VALUES ( :Nombre, :Tel, :Mail, :Pass, :sexo)';
