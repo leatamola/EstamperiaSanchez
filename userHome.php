@@ -19,11 +19,11 @@
 <body>
 
 	<!-- VALIDATION FUTURE MODELS -->
-  <?php include('Models/validacionLogueo.php');
-  ?>
 	<!-- HEADER -->
   <?php include ('header.php'); ?>
-
+  <?php include ('autoload.php');
+  session_start();
+  ?>
 	<!-- FORM -->
   <section class="registro container">
     <div class="container">
@@ -33,12 +33,13 @@
           <h2>
 
             <?php
-              echo 'Hola'.$_GET['us'].'<br>';
+              //var_dump($_SESSION['usuario']);
+              echo 'Hola '.$_SESSION['usuario']->getNombre();
+              echo 'Has iniciado tu sesión, ¿Listo para tener tus mejores estampas?';
               echo "Home en construcción."
             ?>
           </h2>
-          <h3> Logueo exitoso </h2>
-          <?php //var_dump($_GET); ?>-->
+          <h2> Logueo exitoso </h2>
         </div>
       </div>
 

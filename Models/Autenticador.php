@@ -20,10 +20,12 @@ class Autenticador
         echo "error 1";
       //  var_dump($consultaUsuario);
       }else {
-        $this->errorLogueo = "INTENTO LOGUEAR EN SESION";
-        $_SESSION['email'] = $datos['userMail'];
-        echo "error 2";
-        //header('location:userHome.php?us='.$datos['userMail']);
+        //$this->errorLogueo = "INTENTO LOGUEAR EN SESION";
+        $usuario = new Usuario($consultaUsuario['Nombre'], $consultaUsuario['Mail']);
+        $_SESSION['usuario'] = $usuario;
+        //echo "error 2";
+        //var_dump($consultaUsuario) ;
+        header('location:userHome.php');
       }
     }else{
       $this->errorLogueo = "datos del form erroneos";

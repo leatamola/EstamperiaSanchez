@@ -7,14 +7,13 @@ class Usuario{
     private $direccion;
     private $historialCompra = [];
 
-    public function __construct($nombre, $pass, $email,$tel, Direccion $dire)
+    public function __construct($nombre, $email)
     {
       $this->nombre = $nombre;
-      $this->pass = $pass;
+      //$this->pass = $pass;
       $this->email = $email;
-      $this->tel = $tel;
-      $this->tel = $tel;
-      $this->direccion = $dire;
+      //$this->tel = $tel;
+      //$this->direccion = $dire;
       //$this->historialCompra = [];
     }
 
