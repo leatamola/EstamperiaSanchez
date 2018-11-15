@@ -2,6 +2,11 @@
 
 include_once('autoload.php');
 
+session_start();
+if ($_SESSION) {
+  header('location:index.php');
+}
+?>
 
 //$bd = new BaseDeDatos();
 //$validador = new Validacion();

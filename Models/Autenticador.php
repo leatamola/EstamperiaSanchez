@@ -25,7 +25,7 @@ class Autenticador
         $_SESSION['usuario'] = $usuario;
         //echo "error 2";
         //var_dump($consultaUsuario) ;
-        header('location:userHome.php');
+        header('location:index.php');
       }
     }else{
       $this->errorLogueo = "datos del form erroneos";

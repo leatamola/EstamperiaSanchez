@@ -17,19 +17,30 @@
                 <a class="dropdown-item" href="producto.php">Pantalones</a>
             </div>
           </li>
-          <li class="navbar-brand">
-            <a class="nav-link" href="loguearUsuario.php">INGRESA</a>
-          </li>
-          <li class="navbar-brand">
-              <a class="nav-link" href="registrarUsuario.php">REGISTRATE</a>
-          </li>
-          <li class="navbar-brand carrito">
-             <a class="nav-link" href="#"><img src="imagenes/carrito2.png" style="width: 30px"></a>
-          </li>
+          <?php if ($_SESSION): ?>
+            <li class="navbar-brand">
+              <a class="nav-link" href="userHome.php">MI CUENTA</a>
+            </li>
+            <li class="navbar-brand carrito">
+               <a class="nav-link" href="#"><img src="imagenes/carrito2.png" style="width: 30px"></a>
+            </li>
+            <?php else: ?>
+              <li class="navbar-brand">
+                <a class="nav-link" href="loguearUsuario.php">INGRESA</a>
+              </li>
+              <li class="navbar-brand">
+                  <a class="nav-link" href="registrarUsuario.php">REGISTRATE</a>
+              </li>
+          <?php endif; ?>
       </ul>
         <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
           <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar..." aria-label="Buscar">
           <button class="btn btn-danger mr-auto ml-auto" type="submit">Buscar</button>
+          <?php if ($_SESSION): ?>
+            <li class="navbar-brand">
+              <a class="nav-link" href="Models/logout.php">salir</a>
+            </li>
+          <?php endif; ?>
         </form>
 
       </div>

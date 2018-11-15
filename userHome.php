@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <title> Registro - Estamperia Sanchez</title>
+  <title> Usuario - Estamperia Sanchez</title>
 
 </head>
 <body>
@@ -23,6 +23,9 @@
   <?php include ('header.php'); ?>
   <?php include ('autoload.php');
   session_start();
+  if (!$_SESSION) {
+    header('location:index.php');
+  }
   ?>
 	<!-- FORM -->
   <section class="registro container">
@@ -34,12 +37,13 @@
 
             <?php
               //var_dump($_SESSION['usuario']);
-              echo 'Hola '.$_SESSION['usuario']->getNombre();
-              echo 'Has iniciado tu sesión, ¿Listo para tener tus mejores estampas?';
-              echo "Home en construcción."
+              // echo 'Hola '.$_SESSION['usuario']->getNombre();
+              // echo 'Has iniciado tu sesión, ¿Listo para tener tus mejores estampas?';
+              // echo "Home en construcción."
             ?>
           </h2>
-          <h2> Logueo exitoso </h2>
+          <h2> Hola <?php echo $_SESSION['usuario']->getNombre()?> </h2>
+          <h3>Home en construcción</h3>
         </div>
       </div>
 

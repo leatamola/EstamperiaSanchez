@@ -36,8 +36,9 @@
               echo $_GET['us'];
             ?>
           </h2>
-          <h3> Se registró exitosamente. </h2>
-          Antes de efectuar su primera compra, deberá verificar su mail.
+          <h3> Se registró exitosamente. </h3>
+          <h4>Ya puede loguearse con su usuario</h4>
+          <!-- Antes de efectuar su primera compra, deberá verificar su mail. -->
           <!--<?php var_dump($_GET); ?>-->
         </div>
       </div>

@@ -1,3 +1,10 @@
+<?php
+session_start();
+if ($_SESSION) {
+  header('location:index.php');
+}
+?>
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,12 +55,16 @@
 
           <form class="row justify-content" action="" method="post">
 
-            <?php echo $autenticador->errorLogueo;?>
+            <?php
+            // echo $autenticador->errorLogueo;
+            ?>
 
             <label class="etiqueta col-12 col-md-10 col-lg-10">Email:</label>
 
             <input class="col-12 col-md-10 col-lg-10" type="text" name="userMail" placeholder="example@example.com"  value=<?php echo $_POST['userMail']??'';?>>
-            <?php echo $validaLogueo->getErrorEmail(); ?>
+            <?php
+            // echo $validaLogueo->getErrorEmail();
+            ?>
 
             <br><br>
 
