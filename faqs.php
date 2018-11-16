@@ -210,10 +210,9 @@ session_start();
           </button>
           <div class="answers collapse" id="Envios" >
 
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+            Podes comprar nuestros productos desde culquier parte del país ya que contamos con mercado envíos. El cual tiene un <span>plazo aproximado de 72 hs.</span> exeptuando casos de compras al por mayor, <span>en dichos casos la demora en entrega es de 12 a 14 días habiles</span>.
+              los costos de envío se abonan como un item a parte sujeto a promociones de hasta el <span>50% OFF</span> asi que atenti!
+              Tus compras tienen codigo de seguimiento por ende vas a poder rastrear tu paquete en todo momento estes donde estes.
           </div>
         </p>
 
@@ -223,45 +222,9 @@ session_start();
           </button>
           <div class="answers collapse" id="collapseFive" >
 
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+              A la hora de abonar tu compra los medios de pago son muy importantes. Por eso contamos con Mercado Pago, con esta facilidad vas a poder pagar tanto en efectivo por <span>Rapipago, Pago fácil o BAPRO</span>; como con tu tarjeta de <span>débito o crédito</span> preferida. Acomodá tus cuotas con las diferentes promociones de pago que van <span>de 3 a 12 cuotas sin interés</span>.
           </div>
         </p>
-
-        <p>
-          <button type="button" class="btn btn-query btn-lg btn-block"data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Donde <span>ESTAMOS</span>
-          </button>
-          <div class="answers collapse" id="collapseSix" >
-
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-          </div>
-        </p>
-
-        <p>
-          <button type="button" class="btn btn-query btn-lg btn-block"data-toggle="collapse" href="#collapseSeven" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Otra Pregunta
-          </button>
-          <div class="answers collapse" id="collapseSeven"  >
-
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-
-          </div>
-        </p>
-
-        <p>
-          <button type="button" class="btn btn-query btn-lg btn-block"data-toggle="collapse" href="#Dudas" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Tengo  <span>MUCHAS DUDAS</span>
-          </button>
-          <div class="answers collapse" id="Dudas" >
-
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-
-          </div>
-        </p>
-
-
 
         </div>
 
