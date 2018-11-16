@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,13 +25,12 @@
 	<!-- HEADER -->
   <?php include ('header.php'); ?>
   <?php include ('autoload.php');
-  session_start();
   if (!$_SESSION) {
     header('location:index.php');
   }
   ?>
 	<!-- FORM -->
-  <section class="registro container">
+  <section style="margin-top:100px" class="registro container">
     <div class="container">
       <div class="row centrar-contenido">
         <!--METER EL CARRITO Esto es provisorio-->
@@ -41,9 +43,8 @@
               // echo 'Has iniciado tu sesión, ¿Listo para tener tus mejores estampas?';
               // echo "Home en construcción."
             ?>
-          </h2>
-          <h2> Hola <?php echo $_SESSION['usuario']->getNombre()?> </h2>
-          <h3>Home en construcción</h3>
+          <h3 style="strong">Home en construcción</h3>
+          <h3><a href="index.php">Volver al inicio</a></h3>
         </div>
       </div>
 

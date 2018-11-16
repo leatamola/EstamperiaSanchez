@@ -39,7 +39,7 @@ if ($_SESSION) {
   <?php include ('header.php'); ?>
 
 	<!-- FORM -->
-  <section class="registro container">
+  <section style="margin-top:100px" class="registro container">
     <div class="container">
       <div class="row centrar-contenido">
         <div class="form-title col-12 col-lg 6">

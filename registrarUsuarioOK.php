@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +25,7 @@
   <?php include ('header.php'); ?>
 
 	<!-- FORM -->
-  <section class="registro container">
+  <section style="margin-top:100px" class="registro container">
     <div class="container">
       <div class="row centrar-contenido">
         <div class="form-title col-12 col-lg 6">
@@ -37,7 +40,7 @@
             ?>
           </h2>
           <h3> Se registró exitosamente. </h3>
-          <h4>Ya puede loguearse con su usuario</h4>
+          <h4> <a href="loguearUsuario.php">Ingresa con tu nuevo usuario</a></h4>
           <!-- Antes de efectuar su primera compra, deberá verificar su mail. -->
           <!--<?php var_dump($_GET); ?>-->
         </div>

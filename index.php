@@ -1,6 +1,6 @@
 <?php
 session_start();
-var_dump($_SESSION);
+// var_dump($_SESSION);
 
 ?>
 <!DOCTYPE html>
@@ -72,8 +72,8 @@ var_dump($_SESSION);
 				<img src="imagenes/Categorias/hombre/cate3.png" alt="calse remera 3">
 			</a>
 		</div>
-		
-			
+
+
 	</div>
 </section>
 

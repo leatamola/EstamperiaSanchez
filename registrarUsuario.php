@@ -7,7 +7,7 @@ if ($_SESSION) {
   header('location:index.php');
 }
 ?>
-
+<?php
 //$bd = new BaseDeDatos();
 //$validador = new Validacion();
 $autenticador = new Autenticador();
@@ -102,7 +102,7 @@ $autenticador->registrar($_POST);
 						</div>
 						<div class="form-group">
 							<label for="password">Contraseña:</label>
-							<input type="password" name="userPass" id="password" class="form-control" value=<?php echo $_POST['userPass']??'';?>>
+							<input type="password" placeholder="Mínimo 8 caracteres" name="userPass" id="password" class="form-control" value=<?php echo $_POST['userPass']??'';?>>
 							<div class="invalid-feedback"></div>
 						</div>
 						<div class="form-group">

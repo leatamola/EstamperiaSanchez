@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -16,7 +19,7 @@
   <body>
     <?php include ('header.php');?>
 
-    <div class="container">
+    <div style="margin-top:100px" class="container">
 
       <div class="row">
         <?php
