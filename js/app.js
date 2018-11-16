@@ -76,3 +76,8 @@ inputRePass.onblur = function (){
     // console.log(inputPass.length)
   }
 }
+
+
+function mostrar (){
+  document.getElementById('hombre').style.display= 'none';
+}

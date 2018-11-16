@@ -5,27 +5,7 @@ body hr{
   size: 30%;
 }
 
-h3{
-  text-align: center;
-  color: rgb(199,0,0);
-}
 
-input{
-  text-align: center;
-  color: rgb(199,0,0);
-  padding: 10px;
-  border: 1px solid rgb(199,0,0);
-  background-color: white;
-  cursor: pointer;
-}
-
-input:hover{
-  border: 2px solid rgb(199,0,0);
-}
-
-.remeras{
-  margin: 10px;
-}
 
 .categorias{
   margin-top: 20px;
@@ -34,11 +14,6 @@ input:hover{
 
 }
 
-.imagenesCatalogo{
-  width: 100%;
-}
-
-
 #hamburguer{
  margin-left: auto;
 }
@@ -46,19 +21,43 @@ input:hover{
 
 
 h6{
-	position: absolute;
-	width: 100%;
-	color: red;
-	font-size: 40px;
-	text-align: center;
-	top: 200px;
-	margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  color: red;
+  font-size: 40px;
+  text-align: center;
+  top: 200px;
+  margin: 0 auto;
+}
+
+.categ{
+  position: relative;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h4{
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  margin-top:50px;
+  margin-left: 90px;
 }
 
 #galeria{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+}
+
+.categorias{
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 
@@ -71,21 +70,4 @@ h6{
 
 #galeria > div img:hover{
   opacity: 0.8;
-}
-
-.categ{
-  position: relative;
-}
-
-.categ a{
-  text-decoration: none;
-  color: black;
-}
-
-h4{
-  position: absolute;
-  text-align: center;
-  font-size: 22px;
-  margin-top:50px;
-  margin-left: 90px;
 }

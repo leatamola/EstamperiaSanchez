@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="index.php"><img src="imagenes/logo.png" width="160px" class="d-inline-block align-top" alt="logo"></a>
     <button class="navbar-toggler" id="hamburguer" margin-left="auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

@@ -56,52 +56,24 @@ var_dump($_SESSION);
 	<div id="galeria">
 		<div class="categ">
 			<a href="remeras.php">
-				<h4>categoria a</h4>
+				<h4>REMERAS</h4>
 				<img src="imagenes/Categorias/hombre/cate3.png" alt="calse remera 1">
 			</a>
 		</div>
 		<div>
 			<a href="">
-				<h4>categoria a</h4>
+				<h4>CAMPERAS</h4>
 				<img src="imagenes/Categorias/hombre/cate3.png" alt="calse remera 2">
 			</a>
 		</div>
 		<div>
 			<a href="">
-				<h4>categoria a</h4>
+				<h4>PANTALONES</h4>
 				<img src="imagenes/Categorias/hombre/cate3.png" alt="calse remera 3">
 			</a>
 		</div>
-		<div>
-			<a href="">
-				<h4>categoria a</h4>
-				<img src="imagenes/Categorias/hombre/cate4.png" alt="calse remera 4">
-			</a>
-		</div>
-		<div>
-			<a href="">
-				<h4>categoria a</h4>
-				<img src="imagenes/Categorias/hombre/cate6.png" alt="calse remera 5">
-			</a>
-		</div>
-		<div>
-			<a href="">
-				<h4>categoria a</h4>
-				<img src="imagenes/Categorias/hombre/cate6.png" alt="calse remera 6">
-			</a>
-		</div>
-		<div>
-			<a href="">
-				<h4>categoria a</h4>
-				<img src="imagenes/Categorias/hombre/cate6.png" alt="calse remera 6">
-			</a>
-		</div>
-		<div>
-			<a href="">
-				<h4>categoria a</h4>
-				<img src="imagenes/Categorias/hombre/cate6.png" alt="calse remera 6">
-			</a>
-		</div>
+		
+			
 	</div>
 </section>
 
